@@ -2,3 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Steve Azzopardi"
 theme = "kiss-em"
+
+
+[params.microblog]
+  number = 3
