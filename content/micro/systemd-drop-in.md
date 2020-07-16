@@ -10,7 +10,7 @@ tags: [
 ---
 
 At work, I was debugging an
-[issues](https://gitlab.com/gitlab-org/gitlab-runner/-/issues/265820)
+[issue](https://gitlab.com/gitlab-org/gitlab-runner/-/issues/26582)
 where it was failing to update the systemd configuration to the new
 installation path.
 
