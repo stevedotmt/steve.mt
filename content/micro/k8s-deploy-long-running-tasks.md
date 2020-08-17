@@ -30,11 +30,11 @@ problematic because we can't access the pod over the network since it
 has been removed from the service. We can't monitor it, we can debug it
 we can reach it at all.
 
-This is not an ideal situation to be in, and which is why that article
-suggest to create a brand new deployment instead of updating the
-existing one. So you can have both of the versions running at the same
-time and you start daring the old version. If we create a new deployment
-Kubernetes wouldn't start deleting the old pods so they won't be removed
-from the services and we can still be able to access them. These are
-called [rainbow
+It's not ideal to have a process running that you can't monitor. The
+article mentioned above suggests to create a brand new deployment
+instead of updating the version of the existing deployment. You can have
+both of the versions running at the same time and start draining the old
+version. If we create a new deployment Kubernetes wouldn't start
+deleting the old pods so they won't be removed from the services and we
+can still monitor them. These are called [rainbow
 deployments](https://brandon.dimcheff.com/2018/02/rainbow-deploys-with-kubernetes/).
