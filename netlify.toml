@@ -7,3 +7,5 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
+[context.deploy-preview]
+command = "hugo -b $DEPLOY_PRIME_URL"
