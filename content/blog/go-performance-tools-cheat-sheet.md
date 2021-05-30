@@ -53,10 +53,10 @@ ok      gitlab.com/steveazz/blog/go-performance-tools-cheat-sheet/rand 8.828s
 Taking a closer look at what each column means:
 
 ```plaintext
-BenchmarkHitCount100-8              3020            367016 ns/op          269861 B/op          3600 allocs/op
-^------------------^ ^                ^                   ^                   ^                      ^
-         |           |                |                   |                   |                      |
-        Name   Number of CPUs     Total runs       Operations per ns   Byes per operation   Allocations per operations
+BenchmarkHitCount100-8              3020            367016 ns/op             269861 B/op               3600 allocs/op
+^------------------^ ^                ^                   ^                      ^                          ^
+         |           |                |                   |                      |                          |
+       Name   Number of CPUs     Total runs    Nanoseconds per operation   Bytes per operation   Allocations per operations
 ```
 
 ### Comparing Benchmarks
