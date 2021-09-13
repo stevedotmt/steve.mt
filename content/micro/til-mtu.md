@@ -1,0 +1,33 @@
+---
+title: "What is MTU"
+date: 2021-09-13T06:38:21+02:00
+draft: false
+tags: [
+  "TIL",
+]
+---
+`Maximum transmission unit` (MTU) is the max number of bytes of a data packet
+that a device can accept. The max size of MTU size is 1500 bytes.
+
+## What happens when the packet is larger than MTU
+
+If the packet is larger than a specified MTU for a specific device it will be
+dropped off or fragmented into chunks. The packet is fragmented by the
+sender and adds certain fields in the IP header to indicate that the packet is
+fragmented.
+
+`IPv6` cannot fragment packets, so anything that exceeds the MTU will be
+dropped. The same can be achieved in `IPv4` when the "Don't Fragment" flag is
+specified in the packet header.
+
+## How a device knows the receiver MTU.
+
+Devices use the Path MTU Discovery which discovers the MTU of all the devices,
+routers, and switches in the network path. This is done by sending test packets
+with the "Don't Fragment" flag and if one of the hops drops the packet a
+message is sent back with an ICMP message with its MTU.
+
+## Resources
+
+- https://www.cloudflare.com/en-gb/learning/nework-layer/what-is-mtu/
+- https://www.okta.com/identity-101/mtu/t
