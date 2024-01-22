@@ -1,6 +1,6 @@
 ---
 title: "journald RateLimitBurst"
-date: 2020-08-16T19:17:44+02:00
+date: 2024-01-22
 draft: false
 tags: ["TIL", "Linux"]
 ---
