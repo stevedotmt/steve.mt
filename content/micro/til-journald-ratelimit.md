@@ -1,5 +1,5 @@
 ---
-title: "journald"
+title: "journald RateLimitBurst"
 date: 2020-08-16T19:17:44+02:00
 draft: false
 tags: ["TIL", "Linux"]
