@@ -33,7 +33,7 @@ spec:
           valueFrom:
             resourceFieldRef:
               containerName: my-app
-              resource: limits.cpu`
+              resource: limits.cpu
 ```
 
-The example above would set `GOMAXPROCS` to `1` because `resourceFieldRef` gets the `limits.cpu` for that container.
+The example above would sets [`GOMAXPROCS`](https://pkg.go.dev/runtime) to `1` because `resourceFieldRef` gets the `limits.cpu` for that container as shown in the [docs](https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information/)
