@@ -6,6 +6,7 @@ theme = "kiss-em"
 
 [params.microblog]
   number = 3
+  enable = true
 
 [taxonomies]
 tag ="tags"
