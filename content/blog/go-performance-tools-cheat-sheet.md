@@ -2,11 +2,7 @@
 title: "Go Performance Tools Cheat Sheet"
 date: 2021-05-28T04:50:04Z
 draft: false
-tags: [
-  "Go",
-  "profiling",
-  "benchmarks",
-]
+tags: ["Go", "profiling", "benchmarks"]
 ---
 
 Go has a lot of tools available for you to understand where your
@@ -16,13 +12,13 @@ every time. This post aims to be a reference document for
 everything that Go has to provide.
 
 We'll be using
-<https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet> as a
+<https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet> as a
 demo project and there are 3 implementations of the same thing, one more
 performant than the other.
 
-- [default](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/tree/main)
-- [better](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/tree/better)
-- [best](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/tree/best)
+- [default](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/tree/main)
+- [better](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/tree/better)
+- [best](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/tree/best)
 
 ## Benchmarks
 
@@ -31,7 +27,7 @@ One of the most popular ways to see if you improved something is to use
 into Go.
 
 In our demo project, there is already [benchmarks
-avaiable](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/blob/main/rand/counter_test.go)
+avaiable](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/blob/main/rand/counter_test.go)
 and we can run them with a single command.
 
 ```shell
@@ -39,16 +35,17 @@ go test -bench=. -test.benchmem  ./rand/
 
 goos: darwin
 goarch: amd64
-pkg: gitlab.com/steveazz/blog/go-performance-tools-cheat-sheet/rand
+pkg: gitlab.com/steve-blog/blog/go-performance-tools-cheat-sheet/rand
 cpu: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
 BenchmarkHitCount100-8              3020            367016 ns/op          269861 B/op       3600 allocs/op
 BenchmarkHitCount1000-8              326           3737517 ns/op         2696308 B/op      36005 allocs/op
 BenchmarkHitCount100000-8              3         370797178 ns/op        269406189 B/op   3600563 allocs/op
 BenchmarkHitCount1000000-8             1        3857843580 ns/op        2697160640 B/op 36006111 allocs/op
 PASS
-ok      gitlab.com/steveazz/blog/go-performance-tools-cheat-sheet/rand 8.828s
+ok      gitlab.com/steve-blog/blog/go-performance-tools-cheat-sheet/rand 8.828s
 ```
-*Note: `-test.benchmem` is an optional flag to show memory allocations*
+
+_Note: `-test.benchmem` is an optional flag to show memory allocations_
 
 Taking a closer look at what each column means:
 
@@ -67,9 +64,9 @@ that you can compare to benchmark outputs together and it will give you
 the delta between them.
 
 For example, let's compare the
-[`main`](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/tree/main)
+[`main`](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/tree/main)
 and
-[`best`](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/tree/best)
+[`best`](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/tree/best)
 branches.
 
 ```shell
@@ -121,11 +118,13 @@ You can generate profiles using benchmarks that we have in
 the demo project.
 
 CPU:
+
 ```shell
 go test -bench=. -cpuprofile cpu.prof ./rand/
 ```
 
 Memory:
+
 ```shell
 go test -bench=. -memprofile mem.prof ./rand/
 ```
@@ -135,7 +134,7 @@ go test -bench=. -memprofile mem.prof ./rand/
 If you are writing a webserver you can import the
 [`net/http/pprof`](https://pkg.go.dev/net/http/pprof) and it will expose
 the `/debug/pprof` HTTP endpoints on the DefaultServeMux as we are doing
-in the [demo application](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/blob/e7736e21bf1c3be7bb25e4c64b8730bb3b631b73/main.go#L7).
+in the [demo application](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/blob/e7736e21bf1c3be7bb25e4c64b8730bb3b631b73/main.go#L7).
 
 Make sure that your application is not sitting idle and doing work or
 receiving requests so that the profiler can sample calls, or you might
@@ -177,7 +176,7 @@ The command that we will be using is `go tool pprof`.
 #### Callgraph
 
 For example to use the `/debug/pprof` endpoints that we have
-[registered](https://gitlab.com/steveazz-blog/go-performance-tools-cheat-sheet/-/blob/e7736e21bf1c3be7bb25e4c64b8730bb3b631b73/main.go#L7)
+[registered](https://gitlab.com/steve-blog/go-performance-tools-cheat-sheet/-/blob/e7736e21bf1c3be7bb25e4c64b8730bb3b631b73/main.go#L7)
 in our demo application, we can pass in the HTTP endpoint directly.
 
 ```shell
@@ -291,4 +290,3 @@ A more detailed explanation of the tracer can be found over at
 - [pprof++](https://eng.uber.com/pprof-go-profiler/)
 - [Trace deisgn docs](https://docs.google.com/document/u/1/d/1FP5apqzBgr7ahCCgFO-yoVhk4YZrNIDNf9RybngBc14/pub)
 - [How to write benchmarks in Go](https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go)
-
