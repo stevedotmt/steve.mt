@@ -1,8 +1,7 @@
-baseURL = "https://www.steveazz.xyz/"
+baseURL = "https://www.steve.mt/"
 languageCode = "en-us"
 title = "Steve"
 theme = "kiss-em"
-
 
 [params.microblog]
   number = 3
