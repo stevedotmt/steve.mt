@@ -1,4 +1,4 @@
-baseURL = "https://www.steve.mt/"
+baseURL = "https://steve.mt/"
 languageCode = "en-us"
 title = "Steve"
 theme = "kiss-em"
