@@ -18,3 +18,17 @@ make update-theme
     ```sh
     devbox run serve
     ```
+
+## Create new post
+
+Blog Post:
+
+```sh
+hugo new blog/my-post.md
+```
+
+Micro Post:
+
+```sh
+hugo new micro/my-micro-post.md
+```
