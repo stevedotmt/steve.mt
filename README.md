@@ -11,7 +11,7 @@ make update-theme
 ## Local Development
 
 1. Install
-    - [Devbox](https://www.jetify.com/docs/devbox/installing_devbox/
+    - [Devbox](https://www.jetify.com/docs/devbox/installing_devbox/)
     - [direnv](https://direnv.net/docs/installation.html#from-system-packages)
 1. Start hugo with:
 
