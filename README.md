@@ -10,13 +10,11 @@ make update-theme
 
 ## Local Development
 
-1. Install prerequisites
-    - [Nix](https://nixos.org/download/)
-    - [devenv](https://devenv.sh/getting-started/)
+1. Install
+    - [Devbox](https://www.jetify.com/docs/devbox/installing_devbox/
     - [direnv](https://direnv.net/docs/installation.html#from-system-packages)
-1. `direnv` should set up your development environment as soon as you are in the directory
 1. Start hugo with:
 
     ```sh
-    devenv up
+    devbox run serve
     ```
