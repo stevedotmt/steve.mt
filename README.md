@@ -33,14 +33,6 @@ just update-theme
 
 ## Create new post
 
-Blog Post:
-
 ```sh
-hugo new blog/my-post.md
-```
-
-Micro Post:
-
-```sh
-hugo new micro/my-micro-post.md
+hugo new blog/YYYY-MM-DD-my-post.md
 ```

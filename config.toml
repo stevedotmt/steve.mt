@@ -4,8 +4,7 @@ title = "Steve Xuereb"
 theme = "kiss-em"
 
 [params.microblog]
-  number = 3
-  enable = true
+  enable = false
 
 [taxonomies]
 tag ="tags"
