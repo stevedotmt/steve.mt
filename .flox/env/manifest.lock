@@ -1,0 +1,264 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "hugo": {
+        "pkg-path": "hugo",
+        "version": "0.150.1"
+      },
+      "just": {
+        "pkg-path": "just"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/53rhl31085y69ir4nz0y63pvkid06763-hugo-0.150.1.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "hugo-0.150.1",
+      "pname": "hugo",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T04:32:33.908727Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.150.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/w36y21z9hjkp0f3wbgqamh9l0ixi8cl4-hugo-0.150.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/k1pydi3qh4hw2mdjkaj6xhph1k2n48xq-hugo-0.150.1.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "hugo-0.150.1",
+      "pname": "hugo",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T04:42:40.032706Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.150.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/626gm1diyyy9c4d88mqsnq9bnwky73qp-hugo-0.150.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/vilwlgmhwb3gw1fqv75zfs004nqzaj97-hugo-0.150.1.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "hugo-0.150.1",
+      "pname": "hugo",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T04:53:19.946298Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.150.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6m92dlrayf49l6kk03qvi0wg2li23f72-hugo-0.150.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hugo",
+      "broken": false,
+      "derivation": "/nix/store/if44x1v4qs38lg74f2gga701i4pbycgl-hugo-0.150.1.drv",
+      "description": "Fast and modern static website engine",
+      "install_id": "hugo",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "hugo-0.150.1",
+      "pname": "hugo",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T05:02:18.084361Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.150.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7bp5s09mixbvl2mgqcy8x2a1hin7q0l9-hugo-0.150.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/780syp7ksk99ffh4sy22q91mm7daflv5-just-1.43.0.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "just-1.43.0",
+      "pname": "just",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T04:32:34.999708Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/208sqi43f86rpr03zvmq1g59wfnmvxx2-just-1.43.0-doc",
+        "man": "/nix/store/8h3i79nanbzk4cw2ph5vbd02s7rmfl6h-just-1.43.0-man",
+        "out": "/nix/store/cq81m3r8v2sjmdax4v2mpcjdmgcwdcka-just-1.43.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/axlpzivpk7050vc7a2p260zzpfyzp1fb-just-1.43.0.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "just-1.43.0",
+      "pname": "just",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T04:42:41.833761Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/3adpmgzf1x1zakwd3hpv8i92yp10gpxi-just-1.43.0-doc",
+        "man": "/nix/store/zv8h6xdf4nvjgvplk04475bzfnskbaja-just-1.43.0-man",
+        "out": "/nix/store/xq8fp500w47rdcvnc0d7bczhsgqsy9k9-just-1.43.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/f0b7prmgx8s3mhjj0zhr49rdih726xs4-just-1.43.0.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "just-1.43.0",
+      "pname": "just",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T04:53:20.974173Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/0lc1d4bqifc1zrzprgy4abmdlq7gc9m9-just-1.43.0-doc",
+        "man": "/nix/store/41g8nmws2k08l8kp00lnyxj3hygfx9g4-just-1.43.0-man",
+        "out": "/nix/store/g9kc7zf1xk4avxrr5kjcnsngnsc2zlif-just-1.43.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "just",
+      "broken": false,
+      "derivation": "/nix/store/s7maa30gld48kz8cs6i2mflakp7w3mnl-just-1.43.0.drv",
+      "description": "Handy way to save and run project-specific commands",
+      "install_id": "just",
+      "license": "CC0-1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c9b6fb798541223bbb396d287d16f43520250518",
+      "name": "just-1.43.0",
+      "pname": "just",
+      "rev": "c9b6fb798541223bbb396d287d16f43520250518",
+      "rev_count": 873798,
+      "rev_date": "2025-10-07T10:12:45Z",
+      "scrape_date": "2025-10-09T05:02:20.068239Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.43.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/x7bjdv16dj7pmqrgj0r9i5aiya1hvqcx-just-1.43.0-doc",
+        "man": "/nix/store/zj6zgaqa4jr27g13z92dfbm927mgigys-just-1.43.0-man",
+        "out": "/nix/store/g8lpgqmha8v0vqypvrm5y2w09ydwdcwp-just-1.43.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}

@@ -2,22 +2,34 @@
 
 <http://www.steve.mt>
 
-## Update Theme
-
-```sh
-make update-theme
-```
-
 ## Local Development
 
-1. Install
-    - [Devbox](https://www.jetify.com/docs/devbox/installing_devbox/)
-    - [direnv](https://direnv.net/docs/installation.html#from-system-packages)
-1. Start hugo with:
+1. [Install Flox](https://flox.dev/docs/install-flox/install/)
+1. Activate Flox
 
-    ```sh
-    devbox run serve
-    ```
+   ```shell
+   flox activate
+   ```
+
+   _Optinal_: Set up direnv for [auto activate](https://flox.dev/popular-packages/auto-environment-activation-with-direnv-flox/)
+
+1. Initalize theme
+
+   ```shell
+   just init-theme
+   ```
+
+1. Start local server
+
+```shell
+hugo serve
+```
+
+### Update Theme
+
+```sh
+just update-theme
+```
 
 ## Create new post
 
