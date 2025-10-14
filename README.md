@@ -34,5 +34,5 @@ just update-theme
 ## Create new post
 
 ```sh
-hugo new blog/YYYY-MM-DD-my-post.md
+just post $TITLE
 ```

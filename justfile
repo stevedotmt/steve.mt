@@ -3,3 +3,6 @@ init-theme:
 
 update-theme:
     git submodule foreach git pull origin master
+
+post title:
+    hugo new content blog/$(date +%Y-%m-%d)-{{title}}.md
