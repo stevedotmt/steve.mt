@@ -1,3 +1,6 @@
+serve:
+    hugo serve -O
+
 init-theme:
     git submodule update --init --recursive
 

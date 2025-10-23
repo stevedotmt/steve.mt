@@ -22,7 +22,7 @@
 1. Start local server
 
 ```shell
-hugo serve
+just serve
 ```
 
 ### Update Theme
