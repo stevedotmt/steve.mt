@@ -13,22 +13,10 @@
 
    _Optinal_: Set up direnv for [auto activate](https://flox.dev/popular-packages/auto-environment-activation-with-direnv-flox/)
 
-1. Initalize theme
-
-   ```shell
-   just init-theme
-   ```
-
 1. Start local server
 
 ```shell
 just serve
-```
-
-### Update Theme
-
-```sh
-just update-theme
 ```
 
 ## Create new post

@@ -1,0 +1,29 @@
+<!-- layouts/_default/terms.html -->
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+<div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    
+      <div class="subtitle tags is-6 ">
+        {{ $biggest := 1 }}
+        {{ $smallest := 1 }}
+        {{ $max := 3 }}
+        {{ $min := 1 }}
+        {{ $size := $min }}
+
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms.Alphabetical }}
+            {{ $size := (add (mul (div $value.Count $biggest) (sub $max $min)) $min) }}
+            {{ $size := (cond (eq $biggest $smallest) $min $size) }}
+
+
+            <a class = "subtitle is-6" href="{{ $.Site.LanguagePrefix | absURL }}/{{ $data.Plural }}/{{ $value.Name | urlize }}/">
+              {{ $value.Name }}
+            </a>
+
+        {{ end }}
+            </div>
+</div>
+</section>
+{{ partial "footer" . }}
