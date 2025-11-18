@@ -2,6 +2,7 @@
 title: "journald RateLimitBurst"
 date: 2024-01-22
 draft: false
+summary: "Introduces journald RateLimitBurst/Interval, why throttling noisy logs matters, and how to scope limits per unit."
 tags: ["TIL", "Linux"]
 ---
 

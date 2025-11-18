@@ -2,6 +2,7 @@
 title: "System Performance - Chapter 3"
 date: 2021-10-13
 draft: false
+summary: "Summarizes chapter 3 Q&A on OS terminology, process/thread differences, memory management, and kernel duties."
 tags: [
   "linux",
   "system-performance-book"

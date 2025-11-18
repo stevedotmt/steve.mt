@@ -2,6 +2,7 @@
 title: "System Performance - Chapter 4"
 date: 2021-10-20
 draft: false
+summary: "Covers chapter 4 topics: static vs dynamic instrumentation, profiling vs tracing, and expected sampling overheads."
 tags: [
   "linux",
   "system-performance-book"

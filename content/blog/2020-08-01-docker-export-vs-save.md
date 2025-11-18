@@ -2,6 +2,7 @@
 title: "Docker Export vs Docker Save"
 date: 2020-08-01
 draft: false
+summary: "Compares docker export’s flattened container snapshots to docker save image archives and clarifies when to choose each command."
 tags: [
   "TIL",
   "Docker",

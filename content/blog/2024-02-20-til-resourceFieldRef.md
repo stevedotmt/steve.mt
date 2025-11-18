@@ -2,6 +2,7 @@
 title: "Kubernetes Downward API"
 date: 2024-02-20
 draft: false
+summary: "Demonstrates using the Kubernetes Downward API to inject resource-derived env vars like GOMAXPROCS without hitting the API server."
 tags: ["TIL", "Kubernetes"]
 ---
 

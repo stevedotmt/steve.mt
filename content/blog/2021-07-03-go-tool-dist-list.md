@@ -2,6 +2,7 @@
 title: "go tool dist list"
 date: 2021-07-03
 draft: false
+summary: "Shows how go tool dist list reveals every GOOS/GOARCH combo so you can cross-compile with confidence."
 tags: [
   "TIL",
   "Go",

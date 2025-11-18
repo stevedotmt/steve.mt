@@ -2,6 +2,7 @@
 title: "Systemd Drop In"
 date: 2020-07-14
 draft: false
+summary: "Explains how systemd drop-in units override service sections (GitLab Runner example) and how to inspect active overrides with systemctl."
 tags: [
   "TIL",
   "Linux",

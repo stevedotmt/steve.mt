@@ -2,6 +2,7 @@
 title: "Go Context Logger"
 date: 2025-10-14
 draft: false
+summary: "Go's log/slog package can automatically print keys from the passed context using `slog.InfoContext`."
 tags: ["Go", "Logging"]
 ---
 

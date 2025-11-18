@@ -2,6 +2,7 @@
 title: "Go Performance Tools Cheat Sheet"
 date: 2021-05-28
 draft: false
+summary: "Reference tour of Go benchmarks, pprof, tracing, flame graphs, and comparison workflows using a demo repo."
 tags: ["Go", "profiling", "benchmarks"]
 ---
 

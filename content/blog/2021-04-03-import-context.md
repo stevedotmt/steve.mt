@@ -2,6 +2,7 @@
 title: "import \"context\""
 date: 2021-04-03
 draft: false
+summary: "Deep dive on Go’s context package covering cancellation, deadlines, and concrete HTTP, CLI, and concurrency patterns."
 tags: [
   "stdlib",
   "Go",

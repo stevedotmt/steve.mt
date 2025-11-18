@@ -2,6 +2,7 @@
 title: "System Performance - Chapter 2"
 date: 2021-10-04T00:00:00Z
 draft: false
+summary: "Answers Systems Performance chapter 2 exercises, clarifying metrics like IOPS, utilization, and troubleshooting methodologies."
 tags: [
   "linux",
   "system-performance-book"

@@ -2,6 +2,7 @@
 title: "Go Trace Shortcut"
 date: 2020-07-21
 draft: false
+summary: "Captures a Go execution trace and shows that pressing ? in the web UI reveals every navigation shortcut."
 tags: [
   "TIL",
   "Go",

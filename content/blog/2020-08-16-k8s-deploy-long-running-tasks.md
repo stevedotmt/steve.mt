@@ -2,6 +2,7 @@
 title: "Deploy long-running tasks on Kubernetes"
 date: 2020-08-16
 draft: false
+summary: "Recommends rainbow deployments so long-running pods (like GitLab Runner) stay observable while new versions roll out."
 tags: [
   "TIL",
   "Kubernetes",
