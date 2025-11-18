@@ -1,6 +1,6 @@
 ---
 title: "Docker Export vs Docker Save"
-date: 2020-08-01T21:38:21+02:00
+date: 2020-08-01
 draft: false
 tags: [
   "TIL",

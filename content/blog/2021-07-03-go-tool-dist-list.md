@@ -1,6 +1,6 @@
 ---
 title: "go tool dist list"
-date: 2021-07-03T11:38:01Z
+date: 2021-07-03
 draft: false
 tags: [
   "TIL",

@@ -1,6 +1,6 @@
 ---
 title: "Go Trace Shortcut"
-date: 2020-07-21T20:03:46+02:00
+date: 2020-07-21
 draft: false
 tags: [
   "TIL",

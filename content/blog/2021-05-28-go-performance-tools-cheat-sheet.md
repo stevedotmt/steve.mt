@@ -1,6 +1,6 @@
 ---
 title: "Go Performance Tools Cheat Sheet"
-date: 2021-05-28T04:50:04Z
+date: 2021-05-28
 draft: false
 tags: ["Go", "profiling", "benchmarks"]
 ---

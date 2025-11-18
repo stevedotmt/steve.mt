@@ -1,6 +1,6 @@
 ---
 title: "Systemd Drop In"
-date: 2020-07-14T07:04:32+02:00
+date: 2020-07-14
 draft: false
 tags: [
   "TIL",

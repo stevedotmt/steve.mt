@@ -1,6 +1,6 @@
 ---
 title: "Deploy long-running tasks on Kubernetes"
-date: 2020-08-16T19:17:44+02:00
+date: 2020-08-16
 draft: false
 tags: [
   "TIL",
