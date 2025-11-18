@@ -7,4 +7,9 @@ theme = "kiss-em"
   enable = false
 
 [taxonomies]
-tag ="tags"
+ tag ="tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+
