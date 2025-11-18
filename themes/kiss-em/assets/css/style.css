@@ -1401,7 +1401,7 @@ a.box:active {
 .content h4,
 .content h5,
 .content h6 {
-  color: #b52323;
+  color: #222324;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -2512,7 +2512,7 @@ a.box:active {
 }
 
 .areatitle {
-  color: #b52323;
+  color: #222324;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.25;
