@@ -8,7 +8,7 @@
             <span class="icon is-small is-marginless">
               {{ partial "svg/icons" "prev" }}
             </span>
-            {{ i18n "next_page" }}
+            Newer
           </a>
           {{ end }}
         </div>
@@ -17,7 +17,7 @@
         <div class="level-item">
           {{ if .Paginator.HasNext }}
           <a class="button" href="{{ .Paginator.Next.URL }}">
-            {{ i18n "prev_page" }}
+            Older
             <span class="icon is-small is-marginless">
               {{ partial "svg/icons" "next" }}
             </span>

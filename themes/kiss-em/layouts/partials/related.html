@@ -1,7 +1,7 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 
-<h3>{{ i18n "similar_articles" }}</h3>
+<h3>Similar articles</h3>
 
 <ul>
 	{{ range . }}
