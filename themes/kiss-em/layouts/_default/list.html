@@ -32,12 +32,7 @@
             <!-- Date above Article Title-->
             {{if not .Date.IsZero }}
                 <h2 class="subtitle is-6">
-                    <!-- Consider german month names -->
-                    {{if eq .Site.Language.Lang "de" }}
-                        {{ .Date.Day }}. {{ index $.Site.Data.monate (printf "%d" .Date.Month) }} {{ .Date.Year }}, {{ .Date.Format "15:04" }}                 
-                    {{ else }}
-                        {{ .Date.Format "January 2, 2006 | 15:04" }}
-                    {{ end }}
+                    {{ .Date.Format "January 2, 2006" }}
                 </h2>
             {{ end }}
 
@@ -81,17 +76,12 @@
                     {{ end }}
                   </div>
 
-                <!-- Date above Article Title-->
-                {{if not .Date.IsZero }}
-                    <h2 class="subtitle is-6">
-                        <!-- Consider german month names -->
-                        {{if eq .Site.Language.Lang "de" }}
-                            {{ .Date.Day }}. {{ index $.Site.Data.monate (printf "%d" .Date.Month) }} {{ .Date.Year }}, {{ .Date.Format "15:04" }}                 
-                        {{ else }}
-                            {{ .Date.Format "January 2, 2006 | 15:04" }}
-                        {{ end }}
-                    </h2>
-                {{ end }}
+        <!-- Date above Article Title-->
+        {{if not .Date.IsZero }}
+            <h2 class="subtitle is-6">
+                {{ .Date.Format "January 2, 2006" }}
+            </h2>
+        {{ end }}
 
 
                 <!-- Article Title -->
