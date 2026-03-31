@@ -6,10 +6,13 @@ theme = "kiss-em"
 [params.microblog]
   enable = false
 
+[params.posthog]
+  key = ""
+  host = "https://eu.i.posthog.com"
+
 [taxonomies]
  tag ="tags"
 
 [markup]
   [markup.highlight]
     codeFences = false
-

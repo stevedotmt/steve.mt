@@ -27,6 +27,8 @@
         {{ range .Site.Params.Assets.customCSS }}
             <link rel='stylesheet' href='{{ . | absURL }}'>
         {{ end }}
+
+        {{ partial "posthog" . }}
         
     </head>
 
