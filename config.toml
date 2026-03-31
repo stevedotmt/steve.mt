@@ -7,7 +7,7 @@ theme = "kiss-em"
   enable = false
 
 [params.posthog]
-  key = ""
+  key = "phc_34Liqs7CItjZMXweRXCPDi18EE6p5gGK1VVXyIuzYuX"
   host = "https://eu.i.posthog.com"
 
 [taxonomies]
