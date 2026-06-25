@@ -6,10 +6,6 @@ theme = "kiss-em"
 [params.microblog]
   enable = false
 
-[params.posthog]
-  key = "phc_34Liqs7CItjZMXweRXCPDi18EE6p5gGK1VVXyIuzYuX"
-  host = "https://eu.i.posthog.com"
-
 [taxonomies]
  tag ="tags"
 
