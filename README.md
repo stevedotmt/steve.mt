@@ -15,9 +15,9 @@
 
 1. Start local server
 
-```shell
-just serve
-```
+   ```shell
+   just serve
+   ```
 
 ## Create new post
 
