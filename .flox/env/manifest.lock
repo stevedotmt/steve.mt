@@ -1,14 +1,15 @@
 {
   "lockfile-version": 1,
   "manifest": {
-    "version": 1,
+    "schema-version": "1.12.0",
     "install": {
       "hugo": {
         "pkg-path": "hugo",
         "version": "0.150.1"
       },
       "just": {
-        "pkg-path": "just"
+        "pkg-path": "just",
+        "outputs": "all"
       }
     },
     "hook": {},
