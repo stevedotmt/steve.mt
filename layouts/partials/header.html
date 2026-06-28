@@ -14,6 +14,11 @@
         <title> 
             {{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} {{ end }} 
         </title>
+
+        {{ $description := .Description | default .Summary | default .Site.Params.description }}
+        {{ with $description }}
+            <meta name="description" content="{{ . | plainify }}" />
+        {{ end }}
         
         {{ if .Site.Params.rss.enable }}
             {{ with .OutputFormats.Get "rss" }}

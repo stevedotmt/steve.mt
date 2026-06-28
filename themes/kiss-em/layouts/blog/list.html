@@ -46,7 +46,7 @@
                     {{ .Summary | plainify | safeHTML }}
                 
                     <!-- "Read More" Button-->
-                    <a class="button is-link" href="{{ .RelPermalink }}" style="height:28px">Read more</a>
+                    <a class="button is-link" href="{{ .RelPermalink }}" style="height:28px" aria-label="Read more about {{ .Title }}">Read more</a>
 
                 </div>
 

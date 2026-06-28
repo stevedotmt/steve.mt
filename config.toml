@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Steve Xuereb"
 theme = "kiss-em"
 
+[params]
+  description = "Steve Xuereb's technical notes on Go, Kubernetes, Linux, and software engineering."
+
 [pagination]
   pagerSize = 5
 
