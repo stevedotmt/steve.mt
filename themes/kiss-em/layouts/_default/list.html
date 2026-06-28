@@ -17,7 +17,7 @@
     
     <div  class ="container">
         
-        <a href="/micro"><h2 class="areatitle">Microblog</h2></a>
+        <a href='{{ "micro" | relURL }}'><h2 class="areatitle">Microblog</h2></a>
 
         <!-- show "number" of latest "micro" type articles -->
         {{ range first .Site.Params.microblog.number (where .Site.RegularPages.ByDate.Reverse "Section" "==" "micro") }}
@@ -38,7 +38,7 @@
 
             <!-- Article Title -->
             <h1 class="title">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
 
         <!-- End loop -->
@@ -60,7 +60,7 @@
     <div class="container">
 
         {{if .Site.Params.Microblog.enable}}
-            <a href="/blog"><h2 class="areatitle">Blog</h2></a>
+            <a href='{{ "blog" | relURL }}'><h2 class="areatitle">Blog</h2></a>
         {{end}}
         
         <!-- Loop through all posts filtered by type "article" -->
@@ -86,7 +86,7 @@
 
                 <!-- Article Title -->
                 <h1 class="title">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </h1>
 
                 <div class="content">
@@ -95,7 +95,7 @@
                     {{ .Summary | plainify | safeHTML }}
                 
                     <!-- "Read More" Button-->
-                    <a class="button is-link" href="{{ .Permalink }}" style="height:28px">Read more</a>
+                    <a class="button is-link" href="{{ .RelPermalink }}" style="height:28px">Read more</a>
 
                 </div>
 

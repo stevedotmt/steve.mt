@@ -16,16 +16,18 @@
         </title>
         
         {{ if .Site.Params.rss.enable }}
-            <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+            {{ with .OutputFormats.Get "rss" }}
+                <link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+            {{ end }}
         {{ end }}
 
     	<!-- Theme's CSS -->
     	{{ $style := resources.Get "css/style.css" | minify | fingerprint }}
-    	<link rel="stylesheet" href="{{ $style.Permalink }}" />
+    	<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
         <!-- Custom CSS can be used to override CSS definitions -->
         {{ range .Site.Params.Assets.customCSS }}
-            <link rel='stylesheet' href='{{ . | absURL }}'>
+            <link rel='stylesheet' href='{{ . | relURL }}'>
         {{ end }}
 
         

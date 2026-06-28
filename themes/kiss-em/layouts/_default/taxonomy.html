@@ -1,4 +1,4 @@
-<!-- layouts/_default/terms.html -->
+<!-- layouts/_default/taxonomy.html -->
 {{ partial "header" . }}
 {{ partial "nav" . }}
 <section class="section">
@@ -18,7 +18,8 @@
             {{ $size := (cond (eq $biggest $smallest) $min $size) }}
 
 
-            <a class = "subtitle is-6" href="{{ $.Site.LanguagePrefix | absURL }}/{{ $data.Plural }}/{{ $value.Name | urlize }}/">
+            {{ $termURL := printf "%s/%s/" $data.Plural ($value.Name | urlize) | relURL }}
+            <a class="subtitle is-6" href="{{ $termURL }}">
               {{ $value.Name }}
             </a>
 

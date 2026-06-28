@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Steve Xuereb"
 theme = "kiss-em"
 
+[pagination]
+  pagerSize = 5
+
 [params.microblog]
   enable = false
 

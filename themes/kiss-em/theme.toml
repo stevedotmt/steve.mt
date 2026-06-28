@@ -21,7 +21,7 @@ features = [
   "social-menu",
   "syntax-highlighting",
 ]
-min_version = 0.28
+min_version = "0.120.0"
 
 [author]
   name = "Pavel Pi"

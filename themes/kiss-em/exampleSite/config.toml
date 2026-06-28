@@ -1,7 +1,8 @@
 baseurl = "https://example.com"
 languageCode = "en"
 theme = "kiss-em"
-Paginate = 5 # Number of posts per page
+[pagination]
+  pagerSize = 5 # Number of posts per page
 enableRobotsTXT = true
 defaultContentLanguage = "en"
 
