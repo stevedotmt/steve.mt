@@ -6,6 +6,16 @@ theme = "kiss-em"
 [params.microblog]
   enable = false
 
+[params.rss]
+  enable = true
+  includeContent = true
+
+[params.social]
+  rss = "blog/index.xml"
+
+[params.social.config]
+  platforms = ["rss"]
+
 [taxonomies]
  tag ="tags"
 
