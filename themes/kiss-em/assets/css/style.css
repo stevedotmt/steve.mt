@@ -6750,3 +6750,23 @@ div.subtitle.tags {
 .highlight pre {
   margin: 0;
 }
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  background-image: radial-gradient(circle, #d3d6db 1px, transparent 2px);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 10px 3px;
+  padding-top: 1.5rem;
+}
+
+.content h2:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.content h2 {
+  margin-bottom: 1.5rem;
+}
