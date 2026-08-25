@@ -32,7 +32,8 @@
 
         <!-- Custom CSS can be used to override CSS definitions -->
         {{ range .Site.Params.Assets.customCSS }}
-            <link rel='stylesheet' href='{{ . | absURL }}'>
+            {{ $custom := resources.Get . | minify | fingerprint }}
+            <link rel='stylesheet' href='{{ $custom.Permalink }}'>
         {{ end }}
 
         

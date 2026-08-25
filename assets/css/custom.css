@@ -1,0 +1,23 @@
+#nav-heading-block {
+  display: inline-block;
+  line-height: 1.2;
+  text-align: left;
+}
+
+#nav-heading-block #nav-heading {
+  margin-bottom: 0;
+}
+
+#nav-tagline {
+  display: block;
+}
+
+/* Tighten the gap between the nav and the content below it */
+.section-nav {
+  padding-bottom: 0;
+}
+
+.section-nav + .section,
+.section-nav + .section-highlight {
+  padding-top: 20px;
+}

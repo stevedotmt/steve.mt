@@ -5,6 +5,10 @@ theme = "kiss-em"
 
 [params]
   description = "Steve Xuereb's technical notes on Go, Kubernetes, Linux, and software engineering."
+  tagline = "I solve more problems than I create"
+
+[params.Assets]
+  customCSS = ["css/custom.css"]
 
 [pagination]
   pagerSize = 5
